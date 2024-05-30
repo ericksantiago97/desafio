@@ -1,0 +1,38 @@
+.btn{
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 23px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-weight: 700;
+    font-size: 12px;
+    height: 26px;
+    transition: all 0.5s;
+
+
+    @media (min-width: 769px) {
+        top: 29px;
+        right: 88px;
+        padding: 10px 12px 10px 15px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    svg{
+        margin-top: -1px;
+        margin-right: 10px;
+        width: 11px;
+
+        @media (min-width: 769px) {
+            width: 19px;
+            margin-top: 0;
+        }
+    }
+
+    &:hover{
+        cursor: pointer;
+        background-color: #e6e6e6;
+    }
+}

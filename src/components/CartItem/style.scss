@@ -1,0 +1,143 @@
+.item{
+    margin-bottom: 15px;
+    &__close{
+        margin-left: 83%;
+        font-size: 42px;
+
+        @media (min-width: 769px) {
+            margin-left: 97%;
+            margin-bottom: -15px;
+        }
+
+        :hover{
+            cursor: pointer;
+        }
+    }
+
+    &__info{
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 22px 16px;
+        margin-top: -50px;
+        flex-direction: column;
+    
+        @media (min-width: 769px) {
+            padding: 19px 35px 19px 23px;
+            margin-top: 0;
+            flex-direction: row;
+        }
+
+        &--image{
+            width: 80px;
+            height: 95px;
+
+            @media (min-width: 769px) {
+                width: 46px;
+                height: 57px;
+            }
+        }
+
+        &--title{
+            font-size: 16px;
+            margin-top: 14px;
+
+            @media (min-width: 769px) {
+                max-width: 100px;
+                font-size: 13px;
+                margin-top: 0;
+                margin-left: 21px;
+            }
+        }
+        &--quantity{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            @media (min-width: 769px) {
+                display: block;
+                margin-left: 9px;
+                justify-content: flex-start;
+                align-items: none;
+                width: auto;
+            }
+
+            &-text{
+                display: none;
+
+                @media (min-width: 769px) {
+                    display: block;
+                    font-size: 5px;
+                }
+
+                
+            }
+            &-buttons{
+                display: flex;
+                border-radius: 8px;
+                border-color: #bfbfbf;
+                border-style: solid;
+                border-width: 1px;
+                column-gap: 5px;
+                margin-top: 4px;
+                padding: 6px 15px;
+
+                @media (min-width: 769px) {
+                    padding: 3px 8px;
+                }
+
+                svg{
+                    margin-top: 3px;
+                }
+
+                &__text{
+                    font-size: 20px;
+                    margin-top: 3px;
+                    
+                    @media (min-width: 769px) {
+                        font-size: 10px;
+                    }
+                }
+                &__minus,
+                &__plus{
+                    cursor: pointer;
+                    font-size: 24px;
+
+                    @media (min-width: 769px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        &--priceMob{
+            background-color: #000;
+            color: #fff;
+            font-weight: 700;
+            font-size: 15px;
+            display: flex;
+            border-radius: 8px;
+            padding: 9px 17px;
+            
+
+            @media (min-width: 769px) {
+                display: none;
+            }
+        }
+
+        &--priceDesk{
+            margin-left: 40px;
+            font-weight: 700;
+            font-size: 14px;
+            display: none;
+
+            @media (min-width: 769px) {
+                display: block;
+            }
+        }
+    }
+
+    
+}

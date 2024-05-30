@@ -1,0 +1,12 @@
+.products{
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    padding: 18px 10%;
+    gap: 30px 20px;
+    
+    @media (min-width: 769px) {
+        padding: 116px 10%;
+    }
+}

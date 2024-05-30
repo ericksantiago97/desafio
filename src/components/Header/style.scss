@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #0F52BA;
+    padding: 11px 23px 11px 20px;
+
+    @media (min-width: 769px) {
+        padding: 29px 88px 29px 65px;
+    }
+    
+    &__title{
+        font-weight: 300;
+        font-size: 16px;
+        color: #fff;
+    
+        @media (min-width: 769px) {
+            font-size: 20px;
+        }
+    
+        &__bold{
+            font-weight: 600;
+            font-size: 32px;
+            @media (min-width: 769px) {
+                font-size: 40px;
+            }
+        }    
+    }
+}
